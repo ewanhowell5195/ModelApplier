@@ -9,3 +9,6 @@ ModelApplier is a datapack that allows you to to easily change the displayed mod
    - OR: Press G to open the quick actions menu, then select `Apply Model`
    - OR: Use the command `/trigger applymodel`
 3. Your model will now be applied. You can rename the item again if you want it to have a unique name.
+
+## Bonus Feature
+Once a model has been applied to an item, that item will be able to be worn on the head, even if it didn't support that originally.
