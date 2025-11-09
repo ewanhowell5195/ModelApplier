@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Model Applier",
+  "external_title": "Model Applier",
+  "actions": [
+    {
+      "label": "Apply Model",
+      "tooltip": "Applies the name of the held item as the item model for it to load",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger applymodel"
+      }
+    }
+  ]
+}
