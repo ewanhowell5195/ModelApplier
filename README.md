@@ -18,4 +18,4 @@ Once a model has been applied to an item, that item will be able to be worn on t
 ModelApplier can also be used to apply and remove the glint effect from any item.
 1. Open `ModelApplier` as outlined above.
 2. Open the `GlintApplier` option.
-3. Select either `Apply Glint` or `Remove Glint` to add or remove enchantment glints.
+3. Select either `Apply Enchantment Glint` or `Remove Enchantment Glint` to add or remove enchantment glints.

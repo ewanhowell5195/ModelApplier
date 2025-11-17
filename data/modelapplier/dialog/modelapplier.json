@@ -23,7 +23,7 @@
           "external_title": "GlintApplier",
           "actions": [
             {
-              "label": "Apply Glint",
+              "label": "Apply Enchantment Glint",
               "tooltip": "Add the enchantment glint effect to your currently held item",
               "action": {
                 "type": "minecraft:run_command",
@@ -31,7 +31,7 @@
               }
             },
             {
-              "label": "Remove Glint",
+              "label": "Remove Enchantment Glint",
               "tooltip": "Remove the enchantment glint effect from your currently held item",
               "action": {
                 "type": "minecraft:run_command",
