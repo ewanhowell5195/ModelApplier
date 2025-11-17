@@ -1,7 +1,8 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Model Applier",
-  "external_title": "Model Applier",
+  "title": "ModelApplier",
+  "external_title": "ModelApplier",
+  "columns": 1,
   "actions": [
     {
       "label": "Apply Model",
@@ -9,6 +10,44 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger applymodel"
+      }
+    },
+    {
+      "label": "GlintApplier",
+      "tooltip": "Add or remove glints from an item",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "GlintApplier",
+          "external_title": "GlintApplier",
+          "actions": [
+            {
+              "label": "Apply Glint",
+              "tooltip": "Add the enchantment glint effect to your currently held item",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger applyglint"
+              }
+            },
+            {
+              "label": "Remove Glint",
+              "tooltip": "Remove the enchantment glint effect from your currently held item",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger applyglint set 2"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back to ModelApplier",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:modelapplier"
+            }
+          }
+        }
       }
     }
   ]

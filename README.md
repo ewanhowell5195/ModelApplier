@@ -10,5 +10,12 @@ ModelApplier is a datapack that allows you to to easily change the displayed mod
    - OR: Use the command `/trigger applymodel`
 3. Your model will now be applied. You can rename the item again if you want it to have a unique name.
 
-## Bonus Feature
+## Bonus Features
+### Wearable Items
 Once a model has been applied to an item, that item will be able to be worn on the head, even if it didn't support that originally.
+
+### GlintApplier
+ModelApplier can also be used to apply and remove the glint effect from any item.
+1. Open `ModelApplier` as outlined above
+2. Open the `GlintApplier` option
+3. Select either `Apply Glint` or `Remove Glint` to add or remove enchantment glints
