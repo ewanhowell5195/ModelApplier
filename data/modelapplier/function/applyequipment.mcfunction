@@ -1,5 +1,5 @@
 summon armor_stand ~ ~ ~ {NoGravity:1,Invisible:1,CustomName:"ModelApplier"}
 data modify entity @n[type=armor_stand,name=ModelApplier] equipment.mainhand set from entity @s SelectedItem
-data merge entity @n[type=armor_stand,name=ModelApplier] {equipment:{mainhand:{components:{equippable:{slot:head}}}}}
+data modify entity @n[type=armor_stand,name=ModelApplier] equipment.mainhand.components.minecraft:equippable.asset_id set from entity @n[type=armor_stand,name=ModelApplier] equipment.mainhand.components.minecraft:custom_name
 item replace entity @s weapon.mainhand from entity @n[type=armor_stand,name=ModelApplier] weapon.mainhand
 kill @n[type=armor_stand]

@@ -5,11 +5,41 @@
   "columns": 1,
   "actions": [
     {
-      "label": "Apply Model",
-      "tooltip": "Applies the name of the held item as the item model for it to load",
+      "label": "ModelApplier",
+      "tooltip": "Apply the name of the held item as the item or equipment model for it to load",
       "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger applymodel"
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "ModelApplier",
+          "external_title": "ModelApplier",
+          "actions": [
+            {
+              "label": "Apply Item Model",
+              "tooltip": "Set the held item's item model to the renamed value",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger applymodel"
+              }
+            },
+            {
+              "label": "Apply Equipment Model",
+              "tooltip": "Use the renamed value as the equippable asset ID",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger applyequipment"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:modelapplier"
+            }
+          }
+        }
       }
     },
     {
@@ -73,7 +103,7 @@
           ],
           "exit_action": {
             "label": "Back",
-            "tooltip": "Go back to ModelApplier",
+            "tooltip": "Go back",
             "action": {
               "type": "minecraft:show_dialog",
               "dialog": "modelapplier:modelapplier"
@@ -111,7 +141,7 @@
           ],
           "exit_action": {
             "label": "Back",
-            "tooltip": "Go back to ModelApplier",
+            "tooltip": "Go back",
             "action": {
               "type": "minecraft:show_dialog",
               "dialog": "modelapplier:modelapplier"
@@ -149,7 +179,7 @@
           ],
           "exit_action": {
             "label": "Back",
-            "tooltip": "Go back to ModelApplier",
+            "tooltip": "Go back",
             "action": {
               "type": "minecraft:show_dialog",
               "dialog": "modelapplier:modelapplier"
