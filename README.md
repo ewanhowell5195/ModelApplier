@@ -9,17 +9,25 @@ ModelApplier is a datapack that allows you to to easily change the displayed mod
    - OR: Press G to open the quick actions menu, then select `Apply Model`
 3. Your model will now be applied. You can rename the item again if you want it to have a unique name.
 
-## Bonus Features
-### Wearable Items
-Once a model has been applied to an item, that item will be able to be worn on the head, even if it didn't support that originally.
+## SlotApplier
+Assign any held item to a specific equipment slot.
+1. Open `ModelApplier`
+2. Choose `SlotApplier`
+3. Pick the slot you want.
+   - `Head`
+   - `Chest`
+   - `Legs`
+   - `Feet`
+   - `Horse Armor / Llama Carpet`
+   - `Saddle`ch
 
-### GlintApplier
+## GlintApplier
 ModelApplier can also be used to apply and remove the glint effect from any item.
-1. Open `ModelApplier` as outlined above.
-2. Open the `GlintApplier` option.
-3. Select either `Apply Enchantment Glint` or `Remove Enchantment Glint` to add or remove enchantment glints.
+1. Open `ModelApplier` as outlined above
+2. Open the `GlintApplier` option
+3. Select either `Apply Enchantment Glint` or `Remove Enchantment Glint` to add or remove enchantment glints
 
-### Reset Model
+## Reset Model
 Need to undo every change? Use the `Reset Model` option to remove the custom model, glint override, and wearable component from your held item.
 1. Open `ModelApplier`
 2. Open the `Reset Model` option

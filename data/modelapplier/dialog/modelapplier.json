@@ -13,6 +13,76 @@
       }
     },
     {
+      "label": "SlotApplier",
+      "tooltip": "Set which slot the held item can be equipped in",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "SlotApplier",
+          "external_title": "SlotApplier",
+          "actions": [
+            {
+              "label": "Head",
+              "tooltip": "Equip the held item on your head slot",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger slotapplier set 1"
+              }
+            },
+            {
+              "label": "Chest",
+              "tooltip": "Equip the held item on your chest slot",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger slotapplier set 2"
+              }
+            },
+            {
+              "label": "Legs",
+              "tooltip": "Equip the held item on your leg slot",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger slotapplier set 3"
+              }
+            },
+            {
+              "label": "Feet",
+              "tooltip": "Equip the held item on your feet slot",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger slotapplier set 4"
+              }
+            },
+            {
+              "label": "Horse Armor / Llama Carpet",
+              "tooltip": "Equip the held item as horse armor or llama carpet",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger slotapplier set 5"
+              }
+            },
+            {
+              "label": "Saddle",
+              "tooltip": "Equip the held item into the saddle slot",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger slotapplier set 6"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back to ModelApplier",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:modelapplier"
+            }
+          }
+        }
+      }
+    },
+    {
       "label": "GlintApplier",
       "tooltip": "Add or remove glints from an item",
       "action": {
@@ -57,8 +127,8 @@
         "type": "minecraft:show_dialog",
         "dialog": {
           "type": "minecraft:multi_action",
-          "title": "Are you sure you want to reset the held item's model?",
-          "external_title": "Reset Model",
+          "title": "Are you sure?",
+          "external_title": "Are you sure?",
           "actions": [
             {
               "label": "Yes, reset it",
