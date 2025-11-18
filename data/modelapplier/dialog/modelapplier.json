@@ -49,6 +49,44 @@
           }
         }
       }
+    },
+    {
+      "label": "Reset Model",
+      "tooltip": "Remove the applied model and glint overrides from the held item",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Are you sure you want to reset the held item's model?",
+          "external_title": "Reset Model",
+          "actions": [
+            {
+              "label": "Yes, reset it",
+              "tooltip": "Remove the held item's model, equippable, and glint components",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetmodel"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current model and glint state",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:modelapplier"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back to ModelApplier",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:modelapplier"
+            }
+          }
+        }
+      }
     }
   ]
 }
