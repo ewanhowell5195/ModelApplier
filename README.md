@@ -6,12 +6,13 @@ ModelApplier is a datapack that allows you to to easily change the displayed mod
    - Custom namespaced items can be used too, for example naming the item `custom:my_custom_item`
 2. Use ModelApplier to apply the model. Hold the item in your main hand, then:
    - Pause the game, press the `ModelApplier` option, choose `Apply Model`, then pick either `Apply Item Model` or `Apply Equipment Model`
-   - OR: Press G to open the quick actions menu, then select `ModelApplier` and follow the same steps
+      - If `Apply Equipment Model` is chosen and the item does not have a slot assigned yet, you will also be asked to choose the equipment slot to use.
+   - OR: Press G to open the quick actions menu, then select `ModelApplier` and follow the same steps.
 3. Your model will now be applied. You can rename the item again if you want it to have a unique name.
 
 ## Apply Modes
-- `Apply Item Model` copies the item's custom name into the `minecraft:item_model` component for display purposes.
-- `Apply Equipment Model` copies the custom name into the `minecraft:equippable` component's `asset_id`, keeping whichever slot you previously configured through SlotApplier.
+- `Apply Item Model`: Used for rendering an item model, which is defined via an item definition, eg: `assets/minecraft/diamond_sword.json`
+- `Apply Equipment Model`: Used for rendering an equipment model, which is defined via an equipment definition, eg: `assets/minecraft/diamond.json`
 
 ## SlotApplier
 Assign any held item to a specific equipment slot.
@@ -27,12 +28,12 @@ Assign any held item to a specific equipment slot.
 
 ## GlintApplier
 ModelApplier can also be used to apply and remove the glint effect from any item.
-1. Open `ModelApplier` as outlined above
-2. Open the `GlintApplier` option
-3. Select either `Apply Enchantment Glint` or `Remove Enchantment Glint` to add or remove enchantment glints
+1. Open `ModelApplier` as outlined above.
+2. Open the `GlintApplier` option.
+3. Select either `Apply Enchantment Glint` or `Remove Enchantment Glint` to add or remove enchantment glints.
 
 ## Reset Model
 Need to undo every change? Use the `Reset Model` option to remove the custom model, glint override, and wearable component from your held item.
 1. Open `ModelApplier`
-2. Open the `Reset Model` option
+2. Open the `Reset Model` option.
 3. Confirm with `Yes, reset it`
