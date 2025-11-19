@@ -152,7 +152,7 @@
     },
     {
       "label": "Reset Model",
-      "tooltip": "Reset the held item back to its initial state",
+      "tooltip": "Reset your currently held item back to its initial state",
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": {
