@@ -11,7 +11,6 @@ scoreboard players set @a applyglint 0
 scoreboard players enable @a slotapplier
 execute as @a[scores={slotapplier=1..}] at @s run function modelapplier:slotapplier
 scoreboard players set @a slotapplier 0
-scoreboard players enable @a slotapplier
 scoreboard players enable @a resetmodel
 execute as @a[scores={resetmodel=1..}] at @a[scores={resetmodel=1..}] run function modelapplier:resetmodel
 scoreboard players set @a resetmodel 0
