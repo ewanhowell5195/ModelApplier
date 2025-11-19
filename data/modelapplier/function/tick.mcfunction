@@ -5,8 +5,7 @@ scoreboard players enable @a applyequipment
 execute as @a[scores={applyequipment=1..}] at @a[scores={applyequipment=1..}] run function modelapplier:applyequipment
 scoreboard players set @a applyequipment 0
 scoreboard players enable @a applyglint
-execute as @a[scores={applyglint=1}] at @a[scores={applyglint=1}] run function modelapplier:applyglint
-execute as @a[scores={applyglint=2}] at @a[scores={applyglint=2}] run function modelapplier:removeglint
+execute as @a[scores={applyglint=1..}] at @s run function modelapplier:applyglint
 scoreboard players set @a applyglint 0
 scoreboard players enable @a slotapplier
 execute as @a[scores={slotapplier=1..}] at @s run function modelapplier:slotapplier
