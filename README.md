@@ -22,7 +22,7 @@ Assign any held item to a specific equipment slot.
    - `Chest`
    - `Legs`
    - `Feet`
-   - `Horse Armor / Llama Carpet`
+   - `Body Slot (Not the Player)`
    - `Saddle`
 
 ## GlintApplier

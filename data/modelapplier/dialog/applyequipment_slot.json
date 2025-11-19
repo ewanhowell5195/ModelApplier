@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Choose Equipment Slot To Use",
+  "external_title": "Choose Equipment Slot To Use",
+  "actions": [
+    {
+      "label": "Head Slot",
+      "tooltip": "Equip the held item on your head slot",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger slotapplier set 1"
+      }
+    },
+    {
+      "label": "Chest Slot",
+      "tooltip": "Equip the held item on your chest slot",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger slotapplier set 2"
+      }
+    },
+    {
+      "label": "Legs Slot",
+      "tooltip": "Equip the held item on your leg slot",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger slotapplier set 3"
+      }
+    },
+    {
+      "label": "Feet Slot",
+      "tooltip": "Equip the held item on your feet slot",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger slotapplier set 4"
+      }
+    },
+    {
+      "label": "Body Slot (Not the Player)",
+      "tooltip": "Equip the held item on the body slot of entities",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger slotapplier set 5"
+      }
+    },
+    {
+      "label": "Saddle Slot",
+      "tooltip": "Equip the held item into the saddle slot",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger slotapplier set 6"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back",
+    "tooltip": "Return to ModelApplier",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "modelapplier:modelapplier"
+    }
+  }
+}

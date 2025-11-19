@@ -53,7 +53,7 @@
           "external_title": "SlotApplier",
           "actions": [
             {
-              "label": "Head",
+              "label": "Head Slot",
               "tooltip": "Equip the held item on your head slot",
               "action": {
                 "type": "minecraft:run_command",
@@ -61,7 +61,7 @@
               }
             },
             {
-              "label": "Chest",
+              "label": "Chest Slot",
               "tooltip": "Equip the held item on your chest slot",
               "action": {
                 "type": "minecraft:run_command",
@@ -69,7 +69,7 @@
               }
             },
             {
-              "label": "Legs",
+              "label": "Legs Slot",
               "tooltip": "Equip the held item on your leg slot",
               "action": {
                 "type": "minecraft:run_command",
@@ -77,7 +77,7 @@
               }
             },
             {
-              "label": "Feet",
+              "label": "Feet Slot",
               "tooltip": "Equip the held item on your feet slot",
               "action": {
                 "type": "minecraft:run_command",
@@ -85,15 +85,15 @@
               }
             },
             {
-              "label": "Horse Armor / Llama Carpet",
-              "tooltip": "Equip the held item as horse armor or llama carpet",
+              "label": "Body Slot (Not the Player)",
+              "tooltip": "Equip the held item on the body slot of entities",
               "action": {
                 "type": "minecraft:run_command",
                 "command": "trigger slotapplier set 5"
               }
             },
             {
-              "label": "Saddle",
+              "label": "Saddle Slot",
               "tooltip": "Equip the held item into the saddle slot",
               "action": {
                 "type": "minecraft:run_command",

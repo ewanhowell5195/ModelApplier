@@ -1,5 +1,3 @@
-summon armor_stand ~ ~ ~ {NoGravity:1,Invisible:1,CustomName:"ModelApplier"}
-data modify entity @n[type=armor_stand,name=ModelApplier] equipment.mainhand set from entity @s SelectedItem
-data modify entity @n[type=armor_stand,name=ModelApplier] equipment.mainhand.components.minecraft:equippable.asset_id set from entity @n[type=armor_stand,name=ModelApplier] equipment.mainhand.components.minecraft:custom_name
-item replace entity @s weapon.mainhand from entity @n[type=armor_stand,name=ModelApplier] weapon.mainhand
-kill @n[type=armor_stand]
+execute if data entity @s SelectedItem.components.minecraft:equippable.slot run function modelapplier:applyequipment_apply
+execute unless data entity @s SelectedItem.components.minecraft:equippable.slot run scoreboard players set @s applyequipwait 1
+execute unless data entity @s SelectedItem.components.minecraft:equippable.slot run dialog show @s modelapplier:applyequipment_slot
