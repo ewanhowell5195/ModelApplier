@@ -29,6 +29,14 @@
                 "type": "minecraft:run_command",
                 "command": "trigger applyequipment"
               }
+            },
+            {
+              "label": "Apply Painting",
+              "tooltip": "Use the renamed value as the painting variant",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger applypainting"
+              }
             }
           ],
           "exit_action": {
