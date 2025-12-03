@@ -13,7 +13,7 @@ ModelApplier is a datapack that allows you to to easily change the displayed mod
 ## Apply Modes
 - `Apply Item Model`: Used for rendering an item model, which is defined via an item definition, eg: `assets/minecraft/diamond_sword.json`
 - `Apply Equipment Model`: Used for rendering an equipment model, which is defined via an equipment definition, eg: `assets/minecraft/diamond.json`
-- `Apply Painting`: Sets the `minecraft:painting/variant` component on the held item using its renamed value. Only works for paintings.
+- `Apply Painting`: Sets the painting variant to use on the held painting. Custom Painting variants are [defined using datapacks](https://minecraft.wiki/w/Painting_variant_definition).
 
 ## SlotApplier
 Assign any held item to a specific equipment slot.
@@ -33,8 +33,8 @@ ModelApplier can also be used to apply and remove the glint effect from any item
 2. Open the `GlintApplier` option.
 3. Select either `Apply Enchantment Glint` or `Remove Enchantment Glint` to add or remove enchantment glints.
 
-## Reset Model
-Need to undo every change? Use the `Reset Model` option to remove the custom model, painting variant, glint override, and wearable component from your held item.
+## Reset Options
+Need to undo changes? Use the `Reset Options` menu to target specific components or clear everything.
 1. Open `ModelApplier`
-2. Open the `Reset Model` option.
-3. Confirm with `Yes, reset it`
+2. Open the `Reset Options` menu.
+3. Pick `Reset Name`, `Reset Item Model`, `Reset Equipment Model`, `Reset Painting`, `Reset Slot`, `Reset Glint`, or `Reset All` and confirm when prompted.

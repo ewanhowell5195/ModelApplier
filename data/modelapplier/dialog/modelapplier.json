@@ -6,7 +6,7 @@
   "actions": [
     {
       "label": "ModelApplier",
-      "tooltip": "Apply the name of the held item as the item or equipment model for it to load",
+      "tooltip": "Apply the name of the held item as the item, equipment model, or painting variant for it to load",
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": {
@@ -163,37 +163,7 @@
       "tooltip": "Reset your currently held item back to its initial state",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": {
-          "type": "minecraft:multi_action",
-          "title": "Are you sure?",
-          "external_title": "Are you sure?",
-          "actions": [
-            {
-              "label": "Yes, reset it",
-              "tooltip": "Remove the held item's model, equippable, and glint components",
-              "action": {
-                "type": "minecraft:run_command",
-                "command": "trigger resetmodel"
-              }
-            },
-            {
-              "label": "No, go back",
-              "tooltip": "Keep the current model and glint state",
-              "action": {
-                "type": "minecraft:show_dialog",
-                "dialog": "modelapplier:modelapplier"
-              }
-            }
-          ],
-          "exit_action": {
-            "label": "Back",
-            "tooltip": "Go back",
-            "action": {
-              "type": "minecraft:show_dialog",
-              "dialog": "modelapplier:modelapplier"
-            }
-          }
-        }
+        "dialog": "modelapplier:resetmodel"
       }
     }
   ]

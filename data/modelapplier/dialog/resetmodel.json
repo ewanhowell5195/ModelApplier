@@ -1,0 +1,281 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Reset Options",
+  "external_title": "Reset Options",
+  "actions": [
+    {
+      "label": "Reset Name",
+      "tooltip": "Remove the custom name from the held item",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset Name?",
+          "external_title": "Reset Name?",
+          "actions": [
+            {
+              "label": "Yes, reset the name",
+              "tooltip": "Remove the custom name",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetname"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current name",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "Reset Item Model",
+      "tooltip": "Remove the applied item model component",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset Item Model?",
+          "external_title": "Reset Item Model?",
+          "actions": [
+            {
+              "label": "Yes, reset the model",
+              "tooltip": "Remove the custom item model component",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetitemmodel"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current item model",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "Reset Equipment Model",
+      "tooltip": "Remove the applied equipment model component",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset Equipment Model?",
+          "external_title": "Reset Equipment Model?",
+          "actions": [
+            {
+              "label": "Yes, reset the equipment model",
+              "tooltip": "Remove the equippable asset ID",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetequipmentmodel"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current equipment model",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "Reset Painting",
+      "tooltip": "Remove the painting variant component",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset Painting?",
+          "external_title": "Reset Painting?",
+          "actions": [
+            {
+              "label": "Yes, clear the painting",
+              "tooltip": "Remove the painting variant component",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetpainting"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current painting variant",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "Reset Slot",
+      "tooltip": "Remove the equippable slot component",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset Slot?",
+          "external_title": "Reset Slot?",
+          "actions": [
+            {
+              "label": "Yes, clear the slot",
+              "tooltip": "Remove the equippable slot component",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetslot"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current slot",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "Reset Glint",
+      "tooltip": "Remove the glint override from the held item",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset Glint?",
+          "external_title": "Reset Glint?",
+          "actions": [
+            {
+              "label": "Yes, remove the glint override",
+              "tooltip": "Clear the glint setting",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetglint"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current glint setting",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "label": "Reset All",
+      "tooltip": "Remove all applied components from the held item",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Reset All?",
+          "external_title": "Reset All?",
+          "actions": [
+            {
+              "label": "Yes, reset everything",
+              "tooltip": "Remove model, slot, glint, and painting changes",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger resetall"
+              }
+            },
+            {
+              "label": "No, go back",
+              "tooltip": "Keep the current changes",
+              "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "modelapplier:resetmodel"
+              }
+            }
+          ],
+          "exit_action": {
+            "label": "Back",
+            "tooltip": "Go back",
+            "action": {
+              "type": "minecraft:show_dialog",
+              "dialog": "modelapplier:resetmodel"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "Back",
+    "tooltip": "Go back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "modelapplier:modelapplier"
+    }
+  }
+}
