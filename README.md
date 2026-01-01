@@ -11,6 +11,10 @@ Confirmed to work on `1.21.9` to `1.21.11`, but may work on newer versions after
       - If `Apply Equipment Model` is chosen and the item does not have a slot assigned yet, you will also be asked to choose the equipment slot to use.
    - OR: Press G to open the quick actions menu, then select `ModelApplier` and follow the same steps.
 3. Your model will now be applied. You can rename the item again if you want it to have a unique name.
+4. If you applied an item model for a helmet and it is still rendering as a normal helmet in third person, you need to assign the item to the head slot. This switches it to use item rendering instead of armor rendering.
+   1. Open `ModelApplier`
+   2. Choose `SlotApplier`
+   3. Pick the `Head` slot
 
 ## Apply Modes
 - `Apply Item Model`: Used for rendering an item model, which is defined via an item definition, eg: `assets/minecraft/diamond_sword.json`
@@ -18,7 +22,7 @@ Confirmed to work on `1.21.9` to `1.21.11`, but may work on newer versions after
 - `Apply Painting`: Sets the painting variant to use on the held painting. Custom Painting variants are [defined using datapacks](https://minecraft.wiki/w/Painting_variant_definition).
 
 ## SlotApplier
-Assign any held item to a specific equipment slot.
+Assign any held item to a specific equipment slot, allowing it to be equipped in that slot.
 1. Open `ModelApplier`
 2. Choose `SlotApplier`
 3. Pick the slot you want.
