@@ -1,7 +1,9 @@
 # ModelApplier
 ModelApplier is a datapack that allows you to to easily change the displayed model of items in survival mode.
 
-Confirmed to work on `1.21.9` to `1.21.11`, but may work on newer versions after this.
+Confirmed to work on `1.21.9` through `1.21.11`, and [may also work](https://tryitands.ee/) on newer versions.
+
+[![Youtube Video](https://github.com/user-attachments/assets/899ed48e-022e-4abd-a648-0a4c97363d02)](https://www.youtube.com/watch?v=3TwMcAqSHhs)
 
 ## How to use
 1. Rename any item using an anvil to have the name of the model you want. For example: rename a stick to `diamond_sword`. The renamed name must be the item ID if the item you want to use, not it's item name, so `Diamond Sword` will not work.
