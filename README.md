@@ -5,6 +5,13 @@ Confirmed to work on `1.21.9` through `1.21.11`, and [may also work](https://try
 
 [![Youtube Video](https://github.com/user-attachments/assets/899ed48e-022e-4abd-a648-0a4c97363d02)](https://www.youtube.com/watch?v=3TwMcAqSHhs)
 
+## Installation
+
+1. Download the latest release from the [releases page](https://github.com/ewanhowell5195/ModelApplier/releases).
+2. Open the `datapacks` folder for the world you want to use ModelApplier in. For example:
+   - `C:\Users\ewanh\AppData\Roaming\.minecraft\saves\MyWorld\datapacks`
+3. Place `ModelApplier-vX.X.X.zip` into this folder.
+
 ## How to use
 1. Rename any item using an anvil to have the name of the model you want. For example: rename a stick to `diamond_sword`. The renamed name must be the item ID if the item you want to use, not it's item name, so `Diamond Sword` will not work.
    - Custom namespaced items can be used too, for example naming the item `custom:my_custom_item`
