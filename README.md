@@ -9,7 +9,7 @@ Confirmed to work on `1.21.9` through `1.21.11`, and [may also work](https://try
 
 1. Download the latest release from the [releases page](https://github.com/ewanhowell5195/ModelApplier/releases).
 2. Open the `datapacks` folder for the world you want to use ModelApplier in. For example:
-   - `C:\Users\ewanh\AppData\Roaming\.minecraft\saves\MyWorld\datapacks`
+   - `C:\Users\<username>\AppData\Roaming\.minecraft\saves\<world>\datapacks`
 3. Place `ModelApplier-vX.X.X.zip` into this folder.
 
 ## How to use
