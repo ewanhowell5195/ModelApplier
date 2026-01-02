@@ -1,4 +1,7 @@
 # ModelApplier
+[![Modrinth](https://img.shields.io/badge/Modrinth-ModelApplier-1bd96a?logo=modrinth&logoColor=white)](https://modrinth.com/datapack/modelapplier)
+[![CurseForge](https://img.shields.io/badge/CurseForge-ModelApplier-f16436?logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/data-packs/modelapplier)
+
 ModelApplier is a datapack that allows you to to easily change the displayed model of items in survival mode.
 
 Confirmed to work on `1.21.9` through `1.21.11`, and [may also work](https://tryitands.ee/) on newer versions.
@@ -7,7 +10,10 @@ Confirmed to work on `1.21.9` through `1.21.11`, and [may also work](https://try
 
 ## Installation
 
-1. Download the latest release from the [releases page](https://github.com/ewanhowell5195/ModelApplier/releases).
+1. Download the latest release from one of the following sources:
+   - [Modrinth](https://modrinth.com/datapack/modelapplier/versions)
+   - [CurseForge](https://www.curseforge.com/minecraft/data-packs/modelapplier/files/all)
+   - [GitHub Releases](https://github.com/ewanhowell5195/ModelApplier/releases)
 2. Open the `datapacks` folder for the world you want to use ModelApplier in. For example:
    - `C:\Users\<username>\AppData\Roaming\.minecraft\saves\<world>\datapacks`
 3. Place `ModelApplier-vX.X.X.zip` into this folder.
